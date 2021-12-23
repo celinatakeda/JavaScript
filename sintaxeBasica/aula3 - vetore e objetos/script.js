@@ -6,7 +6,7 @@ let array = ['string', 1, true];
 console.log(array); */
 
 // como um array pode guardar difentes valores inclusive outros arrays
-let array = ['string', 1, true, ['array1'], ['array2'], ['array3'], ['array4']];
+//let array = ['string', 1, true, ['array1'], ['array2'], ['array3'], ['array4']];
 //console.log(array)
 /*// como acessar o índice de um array
 console.log(array[0]); */
