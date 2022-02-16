@@ -11,3 +11,20 @@ Existem três modos de declarar variáveis:
 
 **const** - escopo local de bloco, não pode ter seu valor alterado (valor inicialobrigatório);
 
+## Tipos primitivos
+
+**Boolean** - dados lógicos, podem ser verdadeiro ou falso (true or false) em
+bytecode 0 é false e 1 é true;
+
+**Null** - dados nulos;
+
+**Undefined** - dados indefinidos;
+
+**String** - dados em caracteres ou cadeia de caracteres;
+
+**Array** - vetores, matrizes ou lista de dados;
+
+**Object** - dados múltiplos que possuem propriedade e valores, podem representar
+objetos reais;
+ 
+**Function** - blocos de comandos e ações a serem executadas;
