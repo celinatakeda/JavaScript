@@ -28,3 +28,7 @@ bytecode 0 é false e 1 é true;
 objetos reais;
  
 **Function** - blocos de comandos e ações a serem executadas;
+
+## Para saber mais
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript
