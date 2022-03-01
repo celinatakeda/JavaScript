@@ -29,6 +29,14 @@ objetos reais;
  
 **Function** - blocos de comandos e ações a serem executadas;
 
+## Filter, Map e Reduce
+
+**Filter** - cria um novo array com todos os elementos que passaram no teste da função fornecida
+
+**Map** - chama o callback para cada elemento e devolve um novo array com a mesma quantidade de items
+
+**Reduce** - executa uma função para cada elemento retornando um único valor de retorno 
+
 ## Para saber mais
 
 https://developer.mozilla.org/en-US/docs/Web/JavaScript
