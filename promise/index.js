@@ -1,11 +1,20 @@
 const fs = require('fs')
 const path = require('path')
-const basePath = './assets'
+//const { start } = require('repl')
+const basePath = './assets/'
 
 // função callback
+/*
 function cb(err, data) {
     if (err) throw err
     console.log(data)
+}
+*/
+
+function cb(err, data, index, max) {
+    if (err) throw err
+    console.log(data)
+    return start(index + 1, max)
 }
 
 console.log('Begin')
@@ -53,6 +62,7 @@ fs.readFile(path.resolve(basePath, 's1.txt'), { encoding: 'utf-8' }, (err, data)
     })
 })
 */
+/*
 fs.readdir(path.resolve(basePath), (err, files) => {
     if (err) throw err
     files
@@ -61,5 +71,19 @@ fs.readdir(path.resolve(basePath), (err, files) => {
             fs.readFile(path.resolve(basePath, sentenceFile), { encoding: 'utf-8' }, cb) // Will print unordered
         })
 })
+*/
+
+start(1, 4)
+
+
+
+function start(index, max) {
+    if(index > max) return
+    fs.readFile(
+        path.resolve(basePath, `s${index}.txt`),
+        { encoding: 'utf-8' },
+        (err, data) => cb(err, data, index, max)
+    )
+}
 
 console.log('End')
