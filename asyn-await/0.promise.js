@@ -43,9 +43,4 @@ promise.then(
     }catch (rej) {
         console.error(rej)
     }
-    // Or
-    promise.then(
-        (res) => setTimeout(() => console.log(res), 5000),
-        (rej) => console.error(rej)
-)
 })()
