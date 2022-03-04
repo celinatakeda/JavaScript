@@ -2,7 +2,10 @@ const { rejects } = require('assert')
 const fs = require('fs')
 const path = require('path')
 const basePath = './assets/'
+const { promisify } = require('util')
+const readFileAsync = promisify(fs.readFile)
 
+/*
 function readFileAsync(path, options) {
     return new Promise((resolve, reject) => {
         fs.readFile(path, options, (err, data) => {
@@ -11,7 +14,7 @@ function readFileAsync(path, options) {
         })
     })
 }
-
+*/
 console.log('Begin')
 readFileAsync(path.resolve(basePath, 'amizade.txt'), { encoding: 'utf-8' })
     .then(console.log)
